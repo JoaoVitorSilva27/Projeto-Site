@@ -1,8 +1,89 @@
-img{
-    height: 225px;
-    width: 112,5px;
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: black;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
+body::before{
+    content: "";
+    background-image: url(../imagens/backcourt.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cabecalho .logo{
+    height: 112px;
+    width: 200px;
+}
+
+.selecao-jogador {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-height: calc(100vh - 152px);
+    justify-content: center;
+}
+
+.selecao-jogador .lista-jogadores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.selecao-jogador .jogadores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    max-width: 585px;
+}
+
+.selecao-jogador .jogadores .titulo {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 2px solid red;
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    height: 175px;
+    width: 87,5px;
+}
+
+.jogador-selecionado {
+    text-align: center;
+    max-height: 530px;
+}
+
+.jogador-selecionado .jogador-grande{
+    height: 200px;
+    width: 300px;
+}
+
+.jogador-selecionado .nome-jogador{
+    border-bottom: 2px solid red;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.jogador-selecionado .descricao-jogador{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 20px;
+    width: 420px;   
 }
