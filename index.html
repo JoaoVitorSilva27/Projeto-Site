@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    
+
 </head>
 
 <body>
@@ -25,22 +25,36 @@
             <h1 class="titulo">Selecione um jogador</h1>
 
             <ul class="lista-jogadores">
-                <li class="jogador" id="lebron">
+                <li class="jogador selecionado" id="lebron" data-ima="lebron-grande.png" data-name="Lebron James" 
+                data-descri="Apelidado de King James, LeBron foi tetracampeão da
+                NBA, conquistando os títulos em 2012, 2013, 2016 e 2020. Em todos esses anos, foi escolhido o Most
+                Valuable Player (Jogador Mais Valioso) das Finais. Ele também foi o MVP da temporada regular em
+                2009, 2010, 2012 e 2013.">
                     <img src="src/imagens/Lebron.jpg" alt="Lebron James">
                 </li>
-                <li class="jogador" id="ad">
+
+                <li class="jogador" id="ad" data-name="Anthony Davis" data-ima="AD-icon.jpg"
+                    data-descri="Alto, ágil e habilidoso, Davis é capaz de pontuar de qualquer lugar da quadra. Na defesa, sua ótima colocação se combina com sua envergadura e uma velocidade lateral descomunal para criar uma máquina de tocos. “Fear The Brow”, diz o slogan sobre Anthony Davis.">
                     <img src="src/imagens/AD.jpg" alt="Anthony Davis">
                 </li>
-                <li class="jogador" id="carmelo">
+
+                <li class="jogador" id="carmelo" data-name="Carmelo Anthony" data-ima="carmelo-icon.jpg"
+                data-descri="Carmelo Anthony é um dos maiores cestinhas da história da NBA, acumulando 28.289 pontos ao longo de 19 anos de carreira. Ficou conehcido por seu estilo de jogo unico, com arremessos letais e pump fakes memoraveis. Porem, infelizmente faz parte do grupo de jogadores da NBA que nunca foram campeões. ">
                     <img src="src/imagens/StayMe7o.jpg" alt="Carmelo Anthony">
                 </li>
-                <li class="jogador" id="jordan">
+
+                <li class="jogador" id="jordan" data-name="Michael Jordan" data-ima="Michael-Jordan-PNG.png"
+                data-descri="">
                     <img src="src/imagens/jordan.jpg" alt="MJ">
                 </li>
-                <li class="jogador" id="kobe">
+
+                <li class="jogador" id="kobe" data-name="Kobe Bryant" data-ima="kobe-icon.png"
+                data-descri="">
                     <img src="src/imagens/kobe.jpg" alt="Kobe Bryant">
                 </li>
-                <li class="jogador" id="ben">
+
+                <li class="jogador" id="ben" data-name="Ben Wallace" data-ima="ben-icon.jpg"
+                data-descri="">
                     <img src="src/imagens/benwallace.jpg" alt="Ben Wallace">
                 </li>
             </ul>
@@ -48,7 +62,7 @@
         </section>
 
         <section class="jogador-selecionado">
-            <img class="jogador-grande" src="src/imagens/lebron-png.png" alt="Icon Lebron">
+            <img class="jogador-grande" src="src/imagens/lebron-grande.png" alt="Icon Lebron">
             <div class="informacoes-jogador">
                 <h2 class="nome-jogador" id="nome-jogador">Lebron James</h2>
                 <p class="descricao-jogador" id="descricao-jogador">Apelidado de King James, LeBron foi tetracampeão da
@@ -59,6 +73,8 @@
 
         </section>
     </main>
+
+    <script src="./src/js/index.js"></script>
 </body>
 
 </html>
