@@ -1,7 +1,7 @@
 const jogadores =  document.querySelectorAll('.jogador')
 
 jogadores.forEach(personagem => {
-    personagem.addEventListener('mouseenter',() => {
+    personagem.addEventListener('click',() => {
        
         const personagemselecionado = document.querySelector('.selecionado');
         personagemselecionado.classList.remove('selecionado')

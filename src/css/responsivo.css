@@ -22,12 +22,12 @@
     }
 
     .selecao-jogador .jogador img{
-        width: 80px;
+        width: 110px;
     }
 
     .jogador-selecionado .jogador-grande{
         width: 350px;
-        height: 350px;
+        height: 290px;
     }
 
     .jogador-selecionado .descricao-jogador{
